@@ -47,6 +47,10 @@ ul {
   background-image: url(../public/assets/Jaguar1.png);
 }
 
+.bg-image-2 {
+  background-image: url(../public/assets/background-2.png);
+}
+
 .bg-card-1 {
   background-image: url(../public/assets/img-1.png);
 }
@@ -65,6 +69,13 @@ ul {
 }
 
 
+.bg-PlayButtonIcon{
+  background-image: url(../public/assets/PlayButton.svg);
+}
+
+.bg-Frame3Icon{
+  background-image: url(../public/assets/Frame3.svg);
+}
 
 p,
 ol,

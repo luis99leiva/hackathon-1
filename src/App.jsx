@@ -1,18 +1,20 @@
 import React from "react";
-import Navbar from "./components/Navbar.tsx";
-import Header from "./components/Header.tsx";
-import Section1 from "./components/Section-1.tsx";
-import Section2 from "./components/Section-2.tsx";
-import Footer from "./components/Footer.tsx";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Stream from './components/Stream';
+import Reservas from './components/Reservas';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Header />
-      <Section1/>
-      <Section2/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/stream" element={<Stream/>}/>
+          <Route path="/Reservas" element={<Reservas/>}/>
+          
+        </Routes>
+      </BrowserRouter>
       
     </div>
   );

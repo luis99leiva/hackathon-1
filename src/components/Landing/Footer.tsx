@@ -1,14 +1,5 @@
 import React from 'react';
 
-
-function SocialIcon({ className, children }) {
-  return (
-    <button className={`h-6 w-6 flex-shrink-0 ${className}`}>
-      {children}
-    </button>
-  );
-}
-
 export default function Footer3({ className = "" }) {
   return (
     <div className={`font-roboto inline-flex w-full flex-col items-start bg-white px-16 py-20 text-left text-sm leading-normal tracking-[0px] text-black ${className}`}>
@@ -47,7 +38,6 @@ export default function Footer3({ className = "" }) {
       </div>
       <div className="flex items-end justify-center self-stretch pt-8 font-normal">
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 min-[1430px]:flex-nowrap">
-          {/* Additional content goes here */}
         </div>
       </div>
     </div>

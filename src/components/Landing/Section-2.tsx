@@ -51,7 +51,7 @@ export default function Section2({ className = "" }) {
              <button className="button-alternative">
                 <p>Mas informacion</p>
                 <img src="/assets/IconChevronRight.svg" alt="Chevron Right" className="h-6 w-6 flex-shrink-0" />
-                </button>
+              </button>
           </div>
         </div>
       );

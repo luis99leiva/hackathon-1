@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
   
 interface NavbarProps {
@@ -17,10 +18,14 @@ export default function Navbar({ className = "" }: NavbarProps) {
         />
         <div className="flex items-center gap-x-8 text-left text-black">
           <div>
+          <Link to="/Home">
             <p>Inicio</p>
+          </Link>
           </div>
           <div>
+          <Link to="/Stream">
             <p>Transmisión en Vivo</p>
+          </Link>
           </div>
           <div>
             <p>Apadrinar</p>
