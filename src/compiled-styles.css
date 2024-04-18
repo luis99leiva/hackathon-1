@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700");
+@import url("https://api.fontshare.com/css?f[]=roboto@400,700&display=swap");
+
+p,
+ol,
+ul {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.button-alternative {
+  padding: 0.75rem 1.5rem; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.button.primary {
+  background-color: black;
+  color: white;
+}
+
+.button.secondary {
+  color: black;
+}
+
+
+ol,
+ul {
+  padding-inline-start: 1.5em;
+}
+.font-roboto {
+  font-family: Roboto;
+}
+.bg-image {
+  background-image: url(../public/assets/Jaguar1.png);
+}
+
+.bg-card-1 {
+  background-image: url(../public/assets/img-1.png);
+}
+.bg-card-2 {
+  background-image: url(../public/assets/img-2.png);
+}.bg-card-3 {
+  background-image: url(../public/assets/img-3.png);
+}
+
+.IconFacebook{
+  background-image: url(../public/assets/IconFacebook.svg);
+}
+
+.IconInstagram{
+  background-image: url(../public/assets/IconInstagram.svg);
+}
+
+
+
+p,
+ol,
+ul {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+}
+
+ol,
+ul {
+  padding-inline-start: 1.5em;
+}
+
+
