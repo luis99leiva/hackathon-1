@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Stream from './components/Stream';
 import Reservas from './components/Reservas';
+import Apadrinar from './components/Apadrinar'
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/stream" element={<Stream/>}/>
+          <Route path="/Stream" element={<Stream/>}/>
           <Route path="/Reservas" element={<Reservas/>}/>
+          <Route path="/Apadrinar" element={<Apadrinar/>}/>
           
         </Routes>
       </BrowserRouter>

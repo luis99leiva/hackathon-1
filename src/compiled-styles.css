@@ -55,6 +55,16 @@ ul {
   background-image: url(../public/assets/background-3.png);
 }
 
+.bg-image-4 {
+  background-image: url(../public/assets/image-4.png);
+}
+
+.bg-image-5 {
+  background-image: url(../public/assets/Image-5.png);
+}
+
+
+
 .bg-card-1 {
   background-image: url(../public/assets/img-1.png);
 }

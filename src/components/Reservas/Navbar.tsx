@@ -18,7 +18,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
         />
         <div className="flex items-center gap-x-8 text-left text-black">
           <div>
-          <Link to="">
+          <Link to="/">
               <p>Inicio</p>
             </Link>
           </div>

@@ -34,19 +34,19 @@ const EventSection = ({ title, location, description, buttonText, isSoldOut }) =
 
 export default function Section1({ className = "" }) {
   return (
-    <div className={`font-roboto inline-flex w-full flex-col items-center gap-y-12 bg-white px-16 py-28 tracking-[0px] text-black ${className}`}>
+    <div className={`font-roboto inline-flex w-full flex-col items-evenly justify-center gap-y-12 bg-white px-16 py-28 tracking-[0px] text-black ${className}`}>
       {/* ... rest of the upper part of the code ... */}
       <div className="flex gap-x-6">
         <DateBox day="Viernes" date="09" monthYear="Feb 2024" />
-        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" isSoldOut="Agotado" />
+        <EventSection title="Safari Chaco" location="Reserva Defensores del Chaco" description="Constituyen una experiencia única. La principal atracción de estos viajes de aventura a medida es la de sumergirte en la naturaleza." buttonText="Reservar" isSoldOut="Agotado" />
       </div>
       <div className="flex gap-x-6">
         <DateBox day="Sábado" date="10" monthYear="Feb 2024" />
-        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" isSoldOut={undefined} />
+        <EventSection title="Eco-Aventura" location="Reserva Defensores del Chaco" description="Ofrece una amplia gama de actividades ecológicas que permiten disfrutar de la naturaleza y experimentar un enfoque más sostenible." buttonText="Reservar" isSoldOut={undefined} />
       </div>
       <div className="flex gap-x-6">
         <DateBox day="Domingo" date="11" monthYear="Feb 2024" />
-        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" isSoldOut={undefined} />
+        <EventSection title="Eco-Museo" location="Reserva Defensores del Chaco" description="Conoce la historia de la Reserva y sobre la flora y fauna que allí habitan de la mano de los Guardaparques quiénes te contarán sus experiencias y mucho más." buttonText="Reservar" isSoldOut={undefined} />
       </div>
     </div>
   );
