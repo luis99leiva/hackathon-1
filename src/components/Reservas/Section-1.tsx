@@ -42,11 +42,11 @@ export default function Section1({ className = "" }) {
       </div>
       <div className="flex gap-x-6">
         <DateBox day="Sábado" date="10" monthYear="Feb 2024" />
-        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" />
+        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" isSoldOut={undefined} />
       </div>
       <div className="flex gap-x-6">
         <DateBox day="Domingo" date="11" monthYear="Feb 2024" />
-        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" />
+        <EventSection title="Event title heading" location="Location" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique." buttonText="Reservar" isSoldOut={undefined} />
       </div>
     </div>
   );
