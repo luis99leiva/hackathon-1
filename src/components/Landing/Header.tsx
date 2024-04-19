@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Header({ className = "" }) {
   return (
@@ -15,10 +16,14 @@ export default function Header({ className = "" }) {
           <div className="flex items-center self-stretch text-center text-base leading-normal">
             <div className="flex items-center justify-center gap-x-3.5 self-stretch">
               <button className="button primary">
-                <p>Explorar</p>
+                <Link to="/Stream">
+                  <p>Explorar</p>
+                </Link>
               </button>
               <button className="button secondary">
-                <p>Más información</p>
+                <Link to="/Stream">
+                    <p>Más información</p>
+                  </Link>
               </button>
             </div>
           </div>

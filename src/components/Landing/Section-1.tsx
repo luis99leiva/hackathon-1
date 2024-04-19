@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 
 
@@ -22,10 +23,14 @@ export default function Section1({ className = "" }) {
             <div className="flex items-end self-stretch pt-6 text-base font-normal leading-normal">
               <div className="flex items-center justify-center gap-x-6">
                 <button  className="button secondary">
-                  <p>Reservar</p>
+                  <Link to="/Reservas">
+                    <p>Reservar</p>
+                  </Link>
                 </button>
                 <button className="button-alternative">
-                <p>Mas informacion</p>
+                  <Link to="/Reservas">
+                    <p>Más información</p>
+                  </Link>
                 <img src= "../assets/IconChevronRight.svg" alt="Chevron Right" className="h-6 w-6 flex-shrink-0" />
                 </button>
               </div>

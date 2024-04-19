@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 const GuideSection = () => (
   <div className="flex w-96 flex-shrink-0 flex-col items-center justify-center gap-y-6 self-stretch">
@@ -46,12 +47,17 @@ export default function Section2({ className = "" }) {
     
           </div>
           <div className="flex items-center justify-center gap-x-6">
-             <button className="button secondary">
-                <p>Reservar</p></button>
-             <button className="button-alternative">
-                <p>Mas informacion</p>
-                <img src="/assets/IconChevronRight.svg" alt="Chevron Right" className="h-6 w-6 flex-shrink-0" />
-              </button>
+            <button className="button secondary">
+              <Link to="/Reservas">
+                <p>Reservar</p>
+              </Link>
+            </button>
+            <button className="button-alternative">
+              <Link to="/Reservas">
+                <p>Más información</p>
+              </Link>
+              <img src="/assets/IconChevronRight.svg" alt="Chevron Right" className="h-6 w-6 flex-shrink-0" />
+            </button>
           </div>
         </div>
       );

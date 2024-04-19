@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 function SocialIcon({ className, children }) {
   return (
@@ -25,21 +25,31 @@ export default function Footer3({ className = "" }) {
       <div className="flex items-end self-stretch pt-6">
         <div className="flex items-center justify-center gap-x-3">
           <button className=""> 
-          <img src="../assets/IconFacebook.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+            <Link to="https://es-la.facebook.com/">
+              <img src="../assets/IconFacebook.svg" alt="Facebook" className="h-6 w-6 flex-shrink-0"  />
+            </Link>
           </button>
           <button className=""> 
-          <img src="../assets/IconInstagram.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+          <Link to="https://www.instagram.com/?hl=es"> 
+              <img src="../assets/IconInstagram.svg" alt="Instagram" className="h-6 w-6 flex-shrink-0"  />
+            </Link>
           </button>
           <button className=""> 
-          <img src="../assets/IconLinkedin.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+          <Link to="https://ar.linkedin.com/">
+              <img src="../assets/IconLinkedin.svg" alt="Linkedin" 
+              className="h-6 w-6 flex-shrink-0"  />
+            </Link>
           </button>
           <button className=""> 
-          <img src="../assets/IconX.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+          <Link to="https://twitter.com/i/flow/login">
+              <img src="../assets/IconX.svg" alt="Twitter" className="h-6 w-6 flex-shrink-0"  />
+            </Link>
           </button>
           <button className=""> 
-          <img src="../assets/IconYoutube.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+           <Link to="https://www.youtube.com/@WWFparaguay">
+              <img src="../assets/IconYoutube.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+            </Link>
           </button>
-          
         </div>
       </div>
       <div className="flex h-20 flex-col items-center justify-end self-stretch">
