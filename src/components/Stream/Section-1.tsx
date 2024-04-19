@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 const Section1 = ({ className = "" }) => {
-  const videos = ["../assets/video1.mp4", "../assets/video2.mp4", "../assets/video3.mp4"];
+  const videos = ["../assets/video1.mp4", "../assets/video2.mp4", "../assets/video3.mp4", "../assets/Video-main.mp4"];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const handleButtonClick = (index) => {
     console.log("Button clicked with index:", index);
+    // set the index with the new index
     setCurrentVideoIndex(index);
   };
 
@@ -16,7 +17,7 @@ const Section1 = ({ className = "" }) => {
       {/* Main content */}
       <div className="flex-row items-center self-stretch text-left text-4xl font-bold leading-tight">
         <p className='mb-10 '>Experimenta la emoción en tiempo real con nuestras transmisiones interactivas</p>
-        <video width="2000" height="1500" controls>
+        <video key={videos[currentVideoIndex]} width="2000" height="1500" controls>
           <source src={videos[currentVideoIndex]} type="video/mp4"/>
         </video>
       </div>
