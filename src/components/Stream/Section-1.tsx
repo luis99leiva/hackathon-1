@@ -1,15 +1,5 @@
 import React from 'react';
 
-// Price tag component for displaying prices
-const PriceTag = ({ price }) => (
-  <div className="flex w-56 flex-shrink-0 flex-col items-center justify-center gap-y-2 self-stretch rounded-xl border border-solid border-black bg-white p-3">
-    <div className="bg-frame-4 h-12 w-12 flex-shrink-0 bg-contain bg-center bg-no-repeat" />
-    <div className="flex justify-center">
-      <p>{price}</p>
-    </div>
-  </div>
-);
-
 const Section1 = ({ className = "" }) => {
   return (
     <div className={`font-roboto inline-flex w-full flex-col items-start gap-y-5 bg-white px-16 pb-1 pt-28 tracking-[0px] text-black ${className}`}>
@@ -23,16 +13,31 @@ const Section1 = ({ className = "" }) => {
           
         </div>
       </button>
-      {/* Frame 3 */}
       <div className="bg-Frame3Icon flex items-center justify-end self-stretch px-1">
       </div>
       {/* Price tags */}
       <div className="flex flex-wrap items-center justify-center gap-x-80 gap-y-12 self-stretch pt-7 text-center text-base font-normal leading-normal min-w-[1430px]:flex-nowrap">
-        <PriceTag price="$1" />
-        <PriceTag price="$3" />
-        <PriceTag price="$5" />
+        <div className="flex w-56 flex-shrink-0 flex-col items-center justify-center gap-y-2 self-stretch rounded-xl border border-solid border-black bg-white p-3">
+          <button className="button-primary" >
+            <img src="../assets/water-drop.png" alt="water droplet" className="h-8 w-8 flex-shrink-0" />
+              <p style={{ marginTop: '0.5rem' }}>$1</p>
+          </button>
+         </div>
+         <div className="flex w-56 flex-shrink-0 flex-col items-center justify-center gap-y-2 self-stretch rounded-xl border border-solid border-black bg-white p-3">
+          <button className="button-primary" >
+          <img src="../assets/night-vision-camera.png" alt="night vision" className="h-8 w-8 flex-shrink-0" />
+            <p style={{ marginTop: '0.5rem' }}>$3</p>
+          </button>
+        </div>
+        <div className="flex w-56 flex-shrink-0 flex-col items-center justify-center gap-y-2 self-stretch rounded-xl border border-solid border-black bg-white p-3">
+          <button className="button-primary" >
+          <img src="../assets/chicken-leg.png" alt="chicken leg" className="h-8 w-8 flex-shrink-0" />
+            <p style={{ marginTop: '0.5rem' }}>$5</p>
+          </button>
+        </div>
       </div>
     </div>
+    
   );
 }
 
