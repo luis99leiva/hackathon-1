@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DateBox = ({ day, date, monthYear }) => (
-  <div className="flex w-28 flex-shrink-0 flex-col items-center justify-center self-stretch border border-solid border-black bg-white px-3 py-3 text-center">
+  <div className="flex w-28 flex-shrink-0 flex-col items-center justify-center self-stretch border border-solid border-black px-3 py-3 text-center">
     <p className="text-base font-normal leading-normal">{day}</p>
     <p className="text-[32px] font-bold leading-tight">{date}</p>
     <p className="text-base font-normal leading-normal">{monthYear}</p>
@@ -34,7 +34,7 @@ const EventSection = ({ title, location, description, buttonText, isSoldOut }) =
 
 export default function Section1({ className = "" }) {
   return (
-    <div className={`font-roboto inline-flex w-full flex-col items-evenly justify-center gap-y-12 bg-white px-16 py-28 tracking-[0px] text-black ${className}`}>
+    <div className={`font-roboto flex w-[80%] mx-auto flex-col justify-center gap-y-12 px-16 py-28 tracking-[0px] text-black ${className}`}>
       {/* ... rest of the upper part of the code ... */}
       <div className="flex gap-x-6">
         <DateBox day="Viernes" date="09" monthYear="Feb 2024" />

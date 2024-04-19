@@ -15,16 +15,19 @@ export default function Header({ className = "" }) {
           </div>
           <div className="flex items-center self-stretch text-center text-base leading-normal">
             <div className="flex items-center justify-center gap-x-3.5 self-stretch">
+            <Link to="/Stream">
               <button className="button primary">
-                <Link to="/Stream">
                   <p>Explorar</p>
-                </Link>
               </button>
+              </Link>
+
+              <Link to="/Stream">
               <button className="button secondary">
-                <Link to="/Stream">
+
                     <p>Más información</p>
-                  </Link>
+                  
               </button>
+              </Link>
             </div>
           </div>
         </div>

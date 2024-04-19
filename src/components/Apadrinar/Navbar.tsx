@@ -17,27 +17,41 @@ export default function Navbar({ className = "" }: NavbarProps) {
           alt="Live streaming icon"
         />
         <div className="flex items-center gap-x-8 text-left text-black">
+        <Link to="/">
           <div>
-          <Link to="/">
+          
               <p>Inicio</p>
-            </Link>
+           
           </div>
-          <div>
-            <Link to="/Stream">
-              <p>Transmisión en Vivo</p>
-            </Link>
-          </div>
-          <div>
-            <Link to="/Apadrinar">
-              <p>Apadrinar</p>
-            </Link>
-          </div>
-        </div>
-        <div className="border border-solid border-black bg-black px-5 py-2 text-center text-white">
-          <Link to="/Reservas">
-            <p>Reservas</p>
           </Link>
+
+          <Link to="/Stream">
+          <div>
+           
+              <p>Transmisión en Vivo</p>
+            
+          </div>
+          </Link>
+
+          <Link to="/Apadrinar">
+          <div>
+            
+              <p>Donar</p>
+           
+          </div>
+          </Link>
+
+        
         </div>
+
+        <Link to="/Reservas">
+          <div className="border border-solid border-black bg-black px-5 py-2 text-center text-white">
+          
+            <p>Reservas</p>
+          
+         </div>
+         </Link>
+        
       </div>
     );
   }

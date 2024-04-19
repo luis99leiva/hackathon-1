@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+
+
 
 export default function Section2({ className = "" }) {
   return (
@@ -13,22 +16,8 @@ export default function Section2({ className = "" }) {
           </div>
           <div className="flex items-center self-stretch text-left text-5xl font-bold leading-tight" >
             <p>Cómo Interactuar con Nuestras Transmisiones en Vivo</p>
-          </div>
-          <div className="flex items-end self-stretch pt-8 text-base font-normal leading-normal" >
-            <div className="flex items-center justify-center gap-x-6">
-              <div className="flex items-center justify-center self-stretch border border-solid border-black px-6 py-3 text-center" >
-                <div className="flex flex-grow justify-center">
-                  <p>Reservar</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-x-2 text-left" >
-                <div className="flex">
-                  <p>Ver más</p> 
-                  <img src= "../assets/IconChevronRight.svg" alt="Chevron Right" className="h-6 w-6 flex-shrink-0" />
-                </div>
-                
-              </div>
-            </div>
+         
+           
           </div>
         </div>
         <div className="flex w-[616px] flex-shrink-0 flex-col items-center justify-center gap-y-10 self-stretch" >

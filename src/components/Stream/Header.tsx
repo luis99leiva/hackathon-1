@@ -12,9 +12,7 @@ export default function Header({ className = "" }: HeaderProps) {
           <p> Explora el mundo desde la comodidad de tu hogar con nuestras transmisiones en vivo de tours. </p> 
         </div>
         <div className="relative flex justify-center self-stretch">
-          <button className="button primary">
-                <p>Explorar</p>
-          </button>
+          
         </div>
       </div> 
     ); 
