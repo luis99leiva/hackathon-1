@@ -9,8 +9,7 @@ const Section1 = ({ className = "" }) => {
       </div>
       {/* Play button */}
       <button className="mt-14 flex items-center justify-center self-stretch p-72 bg-gradient">
-        <div className="bg-PlayButtonIcon flex items-center justify-center bg-cover bg-center px-16 py-12">
-          
+        <div className="bg-PlayButtonIcon flex items-center justify-center bg-cover bg-center px-16 py-12">   
         </div>
       </button>
       <div className="bg-Frame3Icon flex items-center justify-end self-stretch px-1">
