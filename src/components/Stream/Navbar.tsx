@@ -36,7 +36,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
           <Link to="/Apadrinar">
           <div>
             
-              <p>Apadrinar</p>
+              <p>Donar</p>
            
           </div>
           </Link>
