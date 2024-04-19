@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Section1 = ({ className = "" }) => {
-  const videos = ["../assets/video1.mp4", "../assets/video2.mp4", "../assets/video3.mp4", "../assets/Video-main.mp4"];
+  const videos = ["../assets/video2.mp4", "../assets/video3.mp4", "../assets/video1.mp4", "../assets/Video-main.mp4"];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const handleButtonClick = (index) => {
