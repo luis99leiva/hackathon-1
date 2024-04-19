@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const DateBox = ({ day, date, monthYear }) => (
   <div className="flex w-28 flex-shrink-0 flex-col items-center justify-center self-stretch border border-solid border-black px-3 py-3 text-center">
@@ -8,29 +8,41 @@ const DateBox = ({ day, date, monthYear }) => (
   </div>
 );
 
-const EventSection = ({ title, location, description, buttonText, isSoldOut }) => (
-  <div className="flex flex-grow flex-col items-end justify-end gap-y-2">
-    {/* Whole thing div */}
-    <div className="self-stretch text-2xl font-bold leading-snug">
-      <p>{title}</p>
-    </div>
-    {isSoldOut && (
-      <div className="flex items-center justify-end bg-zinc-100 px-10 py-2 border border-solid border-gray text-center text-sm font-semibold leading-normal"> 
-      {/* Agotado */}
-        <div className="flex flex-grow justify-center">{isSoldOut}</div>
+const EventSection = ({ title, location, description, buttonText, isSoldOut }) => {
+  // State to manage the button color
+  const [buttonColor, setButtonColor] = useState('bg-white'); // Initial color white
+
+  const handleClick = () => {
+    // Toggle color between white and gray
+    setButtonColor(buttonColor === 'bg-white' ? 'bg-gray-300' : 'bg-white');
+  };
+
+  return (
+    <div className="flex flex-grow flex-col items-end justify-end gap-y-2">
+      <div className="self-stretch text-2xl font-bold leading-snug">
+        <p>{title}</p>
       </div>
-    )}
-    <div className="self-stretch text-sm font-normal leading-normal">
-      <p>{location}</p>
+      {isSoldOut && (
+        <div className="flex items-center justify-end bg-zinc-100 px-10 py-2 border border-solid border-gray text-center text-sm font-semibold leading-normal"> 
+          <div className="flex flex-grow justify-center">{isSoldOut}</div>
+        </div>
+      )}
+      <div className="self-stretch text-sm font-normal leading-normal">
+        <p>{location}</p>
+      </div>
+      <div className="flex items-center self-stretch pt-4 text-base font-normal leading-normal">
+        <p>{description}</p>
+      </div>
+      <button 
+        className={`flex items-center justify-center border border-solid border-black px-9 py-2 text-center text-base font-normal leading-normal ${buttonColor}`}
+        onClick={handleClick}
+      >
+        <div className="flex flex-grow justify-center">{buttonText}</div>
+      </button>
     </div>
-    <div className="flex items-center self-stretch pt-4 text-base font-normal leading-normal">
-      <p>{description}</p>
-    </div>
-    <button className="flex items-center justify-center border border-solid border-black px-9 py-2 text-center text-base font-normal leading-normal">
-      <div className="flex flex-grow justify-center">{buttonText}</div>
-    </button>
-  </div>
-);
+  );
+};
+
 
 export default function Section1({ className = "" }) {
   return (
