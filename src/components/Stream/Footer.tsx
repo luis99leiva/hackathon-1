@@ -20,7 +20,7 @@ export default function Footer3({ className = "" }) {
         <p><span className="underline">+(595)992 587120</span></p>
       </div>
       <div className="w-[864px] font-normal">
-        <p><span className="underline">yaguaretePy@wwf.org.py</span></p>
+        <p><span className="underline">liverete@wwf.org.py</span></p>
       </div>
       <div className="flex items-end self-stretch pt-6">
         <div className="flex items-center justify-center gap-x-3">
@@ -31,23 +31,23 @@ export default function Footer3({ className = "" }) {
           </button>
           <button className=""> 
           <Link to="https://www.instagram.com/?hl=es"> 
-              <img src="../assets/IconInstagram.svg" alt="Instagram" className="h-6 w-6 flex-shrink-0"  />
+              <img src="../assets/IconInstagram.svg" alt="Instagram-icon" className="h-6 w-6 flex-shrink-0"  />
             </Link>
           </button>
           <button className=""> 
           <Link to="https://ar.linkedin.com/">
-              <img src="../assets/IconLinkedin.svg" alt="Linkedin" 
+              <img src="../assets/IconLinkedin.svg" alt="Linkedin-icon" 
               className="h-6 w-6 flex-shrink-0"  />
             </Link>
           </button>
           <button className=""> 
           <Link to="https://twitter.com/i/flow/login">
-              <img src="../assets/IconX.svg" alt="Twitter" className="h-6 w-6 flex-shrink-0"  />
+              <img src="../assets/IconX.svg" alt="Twitter-icon" className="h-6 w-6 flex-shrink-0"  />
             </Link>
           </button>
           <button className=""> 
            <Link to="https://www.youtube.com/@WWFparaguay">
-              <img src="../assets/IconYoutube.svg" alt="Description of the image" className="h-6 w-6 flex-shrink-0"  />
+              <img src="../assets/IconYoutube.svg" alt="Youtube-icon" className="h-6 w-6 flex-shrink-0"  />
             </Link>
           </button>
         </div>
